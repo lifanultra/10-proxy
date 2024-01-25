@@ -1,6 +1,6 @@
 ####################################
 # 客户端：Clash
-# 创建时间：2024-01-20 13:09:16
+# 创建时间：2024-01-26 01:04:01
 # 使用模版：ACL4SSR_Online_Mini_Ai.ini
 # 节点数量：3
 # 节点类型：vmess, trojan
@@ -85,36 +85,36 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇨🇳 CN 北京","type":"vmess","server":"117.50.190.50","port":29945,"cipher":"auto","uuid":"683ce5d9-0c3e-44c0-e9e5-fca3f2030ab5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lifan"}}
-  - {"name":"🇹🇼 TW 台湾","type":"vmess","server":"165.154.161.37","port":404,"cipher":"auto","uuid":"","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸 US 美国","type":"trojan","server":"a.sakuracat.site","port":10019,"udp":true,"password":"30cede4b-7dd8-42b1-86e3-4ff19d1fc9ff","sni":"a.sakuracat.fun","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳 CN 北平","type":"vmess","server":"117.50.190.50","port":29945,"cipher":"auto","uuid":"683ce5d9-0c3e-44c0-e9e5-fca3f2030ab5","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/lifan"}}
+  - {"name":"🇨🇳 TW 台北","type":"vmess","server":"165.154.161.37","port":10808,"cipher":"auto","uuid":"18825b72-ad47-47f3-82ad-4995d59de72d","alterId":0,"tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇺🇸 US 纽约\r","type":"trojan","server":"a.sakuracat.site","port":10019,"udp":true,"password":"30cede4b-7dd8-42b1-86e3-4ff19d1fc9ff","sni":"a.sakuracat.fun","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 CN 北京
-      - 🇹🇼 TW 台湾
-      - 🇺🇸 US 美国
+      - 🇨🇳 CN 北平
+      - 🇨🇳 TW 台北
+      - "🇺🇸 US 纽约\r"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 CN 北京
-      - 🇹🇼 TW 台湾
-      - 🇺🇸 US 美国
+      - 🇨🇳 CN 北平
+      - 🇨🇳 TW 台北
+      - "🇺🇸 US 纽约\r"
   - name: 💬 OpenAi
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN 北京
-      - 🇹🇼 TW 台湾
-      - 🇺🇸 US 美国
+      - 🇨🇳 CN 北平
+      - 🇨🇳 TW 台北
+      - "🇺🇸 US 纽约\r"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,9 +132,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN 北京
-      - 🇹🇼 TW 台湾
-      - 🇺🇸 US 美国
+      - 🇨🇳 CN 北平
+      - 🇨🇳 TW 台北
+      - "🇺🇸 US 纽约\r"
 
 rules:
 # 本地/局域网地址
